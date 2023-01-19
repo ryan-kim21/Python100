@@ -13,14 +13,14 @@
 # greet_with_name()
 
 
-#Fuctions with more than 1 input
-def greet_with(name, location):
-    print(f"Hello {name}")
-    print(f"what is it like in {location}")
+# #Fuctions with more than 1 input
+# def greet_with(name, location):
+#     print(f"Hello {name}")
+#     print(f"what is it like in {location}")
 
-greet_with("jack bauer","nowhere")
-greet_with("nowhere","jeckbauer")
+# greet_with("jack bauer","nowhere")
+# greet_with("nowhere","jeckbauer")
 
 
-greet_with(name="Angela",location="London")
+# greet_with(name="Angela",location="London")
 
