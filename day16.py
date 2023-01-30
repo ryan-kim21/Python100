@@ -35,6 +35,45 @@ def remote_exec():
     run("df-h")
     run("free -m")
 
+sudo("yum install mariadb-server -y")
+sudo("systemctl start mariadb")
+sudo("systemctl enable mariadb -y")
+
+def web_setup(WEBURL, DIRNAME):
+    print("#######################################")
+    local("apt install zip unzip -y")
+
+    print("#######################################")
+    print("Installing dependencies")
+    sudo("yum install httpd wget unzip -y")
+
+
+    print("#######################################")
+    print("Start & enable service")
+    sudo("systemctl start httpd")
+    sudo("systemctl enable httpd")
+
+    print("#######################################")
+    print("Start & enable service")
+    local(("wget -O website.zip %S") %  WEBURL)
+    local("unzip -o website.zip")
+
+    with lcd(DIRNAME):
+        local("zip -r tooplate.zip *")
+        put("tooplate.zip", "/var/www/html", use_sudo=True)
+
+    with cd("/var/www/html/"):
+        sudo("unzip -o tooplate.zip")
+    
+    sudo("systemctl restart httpd")
+
+    print("Website setup is done")
+
+
+
+
+
+
 
 
 
