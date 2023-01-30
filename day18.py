@@ -41,7 +41,8 @@ while True:
 
     elif 'edit' in user_action:
     # case 'edit' : 
-        number = int(input("Number of the dodo to edit: "))
+        # number = int(input("Number of the dodo to edit: "))
+        number = int(user_action[5:])
         number = number - 1
 
 
@@ -59,7 +60,8 @@ while True:
         
     elif 'complete' in user_action:
     # case 'complete':
-        number = int(input("Number of the dodo to complete: "))
+        # number = int(input("Number of the todo to complete: "))
+        number = int(user_action[9:])
 
         with open('files/todos.txt','r') as file:
             todos =file.readlines()
