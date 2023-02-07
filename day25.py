@@ -25,7 +25,7 @@ for filepath in filepaths:
     for index, row in df.iterrows():
         pdf.set_font(family="Times", size=10)
         pdf.set_text_color(80, 80, 80)
-        pdf.cell(w=30, h=8)
+        pdf.cell(w=30, h=8 )
 
     
     pdf.output(f"PDFs/{filename}.pdf")
