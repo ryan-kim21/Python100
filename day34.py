@@ -39,4 +39,4 @@ for i in range(len(image_urls)):
     f.write(urlopen(image_byte).read())
     f.close()
 
-# sleep(30)
+# sleep(30) 
