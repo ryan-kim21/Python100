@@ -117,7 +117,93 @@
 
 
 
-class FourClal
+# class FourCal:
+#     def __init__(self, first, second):
+#         self.first = first
+#         self.second = second
+
+#     def setdata(self, first, second):
+#         self.first = first
+#         self.second = second
+#     def add(self):
+#         result = self.first + self.second
+#         return result
+
+#     def mul(self):
+#         result = self.first * self.second
+#         return result
+
+#     def sub(self):
+#         result = self.first - self.second
+#         return result
+# a = FourCal(4,2)
+
+
+
+# print(a.first)
+# print(a.second)
+
+# print(a.add())
+# print(a.mul())
+
+
+
+
+
+
+
+# for i in range(2, 10):
+#     for j in range(1, 10):
+#         print('{} x {} = {}'.format(i, j, i*j))
+
+
+
+
+# class MoreFourCal(FourCal):
+#     def pow(self):
+#         result = self.firest ** self.second
+#         return result
+
+# a = MoreFourCal(4,2)
+# a.pow()
+
+
+
+# def add(a, b): 
+#     return a+b
+
+# def sub(a, b): 
+#     return a-b
+# if __name__ == "__main__":
+#     print(add(1, 4))
+#     print(sub(4, 2))
+# print(add(1, 4))
+# print(sub(4, 2))
+
+
+PI = 3.141592
+class Math:
+    def solv(self, r):
+        return PI * (r **2)
+    def add(a,b):
+        return a+b
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
